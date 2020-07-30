@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-29T14:45:50.859Z</updated>
+  <updated>2020-07-29T23:56:42.406Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,18 @@
     <link href="http://yoursite.com/2020/07/29/%E3%80%90%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E3%80%91%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E3%80%81%E6%99%AE%E9%80%9A%E5%8F%98%E9%87%8F%E3%80%81%E5%BC%95%E7%94%A8%E3%80%81ref/"/>
     <id>http://yoursite.com/2020/07/29/%E3%80%90%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E3%80%91%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E3%80%81%E6%99%AE%E9%80%9A%E5%8F%98%E9%87%8F%E3%80%81%E5%BC%95%E7%94%A8%E3%80%81ref/</id>
     <published>2020-07-29T01:46:40.332Z</published>
-    <updated>2020-07-29T14:45:50.859Z</updated>
+    <updated>2020-07-29T23:56:42.406Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to My Blog!&lt;br&gt;I sincerely hope that my experience can give you a little bit of inspiration! &lt;/p&gt;
+      &lt;p&gt;Welcome to My Blog!&lt;br&gt;I sincerely hope that my experience can give you a little bit of inspiration! &lt;/p&gt;
 &lt;hr&gt;
-&lt;h5 id=&quot;1-什么是内存？？？？？&quot;&gt;&lt;a
-        
-      
+&lt;h5 id=&quot;1-什么是内存？？？？？&quot;&gt;&lt;a href=&quot;#1-什么是内存？？？？？&quot; class=&quot;headerlink&quot; title=&quot;1.什么是内存？？？？？&quot;&gt;&lt;/a&gt;1.什么是内存？？？？？&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;*&lt;em&gt;内存对应的 物理件 就是我们电脑上的内存条！！！ *&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;程序和数据&lt;/strong&gt;平常存储在硬盘&lt;strong&gt;等存储器上，不管你开机或关机了，它们都是存在的，不会丢失。硬盘可以存储的东西很多，但其传输数据的速度较慢。所以需要运行程序或打开数据时，这些数据必须从硬盘等存储器上先传到另一种容量小但速度快得多的存储器，之后才送入CPU进行执行处理。这中间的存储器就是内存（条）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无论何种存储器，软盘、硬盘、光盘或者内存（条），都有地址。因为它们要存储数据，所以就必须按一定的单位的数据分配一个地址。有了地址，程序才能找到这些数据。这很好理解，想想你们家为什么要有门牌号即可。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们编程中的每一行代码，代码中用到的每个数据，都需要在内存上有其映射地址。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -48,12 +47,14 @@
     <link href="http://yoursite.com/2020/07/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2020/07/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
     <published>2020-07-29T00:24:18.000Z</published>
-    <updated>2020-07-29T00:24:18.592Z</updated>
+    <updated>2020-07-29T23:43:42.917Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="Industrial Control" scheme="http://yoursite.com/categories/Industrial-Control/"/>
     
     
   </entry>

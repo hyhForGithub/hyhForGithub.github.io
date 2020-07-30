@@ -96,7 +96,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -179,7 +179,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -188,32 +188,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-categories">
-          <a href="/categories%20" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
           </a>
         </li>
       
@@ -287,7 +267,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-07-30T07:56:42+08:00">
+                2020-07-30
+              </time>
             
           </span>
 
@@ -342,8 +334,7 @@
 
       
         
-          
-            <p>Welcome to My Blog!<br>I sincerely hope that my experience can give you a little bit of inspiration! </p>
+          <p>Welcome to My Blog!<br>I sincerely hope that my experience can give you a little bit of inspiration! </p>
 <hr>
 <h5 id="1-什么是内存？？？？？"><a href="#1-什么是内存？？？？？" class="headerlink" title="1.什么是内存？？？？？"></a>1.什么是内存？？？？？</h5><blockquote>
 <p>*<em>内存对应的 物理件 就是我们电脑上的内存条！！！ *</em> </p>
@@ -351,31 +342,13 @@
 <p><strong>无论何种存储器，软盘、硬盘、光盘或者内存（条），都有地址。因为它们要存储数据，所以就必须按一定的单位的数据分配一个地址。有了地址，程序才能找到这些数据。这很好理解，想想你们家为什么要有门牌号即可。</strong></p>
 <p><strong>我们编程中的每一行代码，代码中用到的每个数据，都需要在内存上有其映射地址。</strong></p>
 </blockquote>
-<p>如下图所示：</p>
-<img src="/images/数据和硬件之间的流关系.png"  height="400" width="100%">
-
-<h5 id="2-什么是内存地址？？？？"><a href="#2-什么是内存地址？？？？" class="headerlink" title="2.什么是内存地址？？？？"></a>2.什么是内存地址？？？？</h5><p><strong>内存地址</strong> <strong>是内存当中存储数据的“一个门牌号”，并不是数据本身，通过内存地址可以找到内存当中存储的数据。也就是我们常说的 程序 如果访问</strong> <strong>内存里的存储的数据<em>，必须通过 **内存地址（门牌号）</em></strong>来进行访问。<strong>内存地址在编译时可以知道，而对应内存地址里存储的内容（也就是变量的值）只有在运行时才能知道。如果需要用到变量的值，(也就是已知内存地址中存储的值)那么编译器发出指令从指定地址读入变量值并放入相应寄存器中。</strong></p>
-<h5 id="3-指针、普变的内存图解"><a href="#3-指针、普变的内存图解" class="headerlink" title="3.指针、普变的内存图解"></a>3.指针、普变的内存图解</h5><img src="/images/变量们在硬件上开辟空间.png"  height="400" width="100%">
-
-<blockquote>
-<p>在这里书写时要特别注意一点，指针的基本类型和数据类型一样，基本数据类型：int型，double型，char型等等，</p>
-<p>类推 指针的类型有：int* 型， double* 型， char* 型。</p>
-<p>书写时要注意 ：是  int*  pa = &amp;a ; 而非 int   *pa = &amp;a ; </p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Windows.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">char</span> c = <span class="string">'a'</span>;</span><br><span class="line">	<span class="keyword">char</span>* pc = &amp;c;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%c\n"</span>,c);<span class="comment">//'a'</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;c);<span class="comment">//14987</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,pc);<span class="comment">//14987</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%c\n"</span>, *pc);<span class="comment">//'a'</span></span><br><span class="line"> </span><br><span class="line">   <span class="comment">// *pc 是pc中用于存储c内容的内存位置而后 又&amp; 自然是c的内存地址。</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;*pc);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="4-引用"><a href="#4-引用" class="headerlink" title="4.引用"></a>4.引用</h5><img src="/images/关于引用的详解.png"  height="400" width="100%">
-
-
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Windows.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> b = <span class="string">'a'</span>;</span><br><span class="line">	<span class="keyword">char</span>&amp; quote = b;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; b &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//'a'</span></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; quote &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//'a'</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;b);<span class="comment">//11533647</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>, &amp;quote);<span class="comment">//11533647</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="5-ref-C-中专用"><a href="#5-ref-C-中专用" class="headerlink" title="5.ref(C# 中专用)"></a>5.ref(C# 中专用)</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ref <span class="keyword">bool</span> isError == <span class="keyword">bool</span>* isError == <span class="keyword">bool</span>&amp; isError;</span><br></pre></td></tr></table></figure>
-
-
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/07/29/%E3%80%90%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E3%80%91%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E3%80%81%E6%99%AE%E9%80%9A%E5%8F%98%E9%87%8F%E3%80%81%E5%BC%95%E7%94%A8%E3%80%81ref/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -406,6 +379,8 @@
   
   
   </article>
+
+  
 
 
     
@@ -459,10 +434,44 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-07-30T07:43:42+08:00">
+                2020-07-30
+              </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Industrial-Control/" itemprop="url" rel="index">
+                    <span itemprop="name">Industrial Control</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -526,6 +535,8 @@
   
   </article>
 
+  
+
 
     
   </section>
@@ -576,7 +587,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives%20%7C%7C%20archive">
+                <a href="/archives">
               
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
@@ -588,8 +599,8 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/Code%20Basics.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -673,6 +684,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
